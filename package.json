@@ -1,0 +1,45 @@
+{
+  "name": "employes",
+  "version": "0.0.1",
+  "private": true,
+  "devDependencies": {
+    "cross-env": "^7.0.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "html-loader": "^0.5.5",
+    "react-scripts": "^3.3.1",
+    "redux-logger": "^3.0.6"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.9.2",
+    "@material-ui/icons": "^4.9.1",
+    "axios": "^0.19.2",
+    "connected-react-router": "^6.7.0",
+    "history": "^4.10.1",
+    "material-table": "^1.57.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.1.3",
+    "react-router-dom": "^5.1.2",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "noscripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "cross-env PORT=4100 react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "IE 10"
+  ]
+}

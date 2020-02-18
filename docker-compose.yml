@@ -1,0 +1,28 @@
+version: '3.6'
+
+services:
+  frontend:
+    container_name: appto_workman_frontend
+    build:
+        context: .
+        dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - 3001:3000
+    environment:
+      - APP_KEY=hashedkey
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
+    networks:
+      - appto_net
+    volumes:
+      - ./src:/app/src
+      #- ./build:/app/build
+      - ./public:/app/public
+      #- ./dist:/app/dist
+
+
+networks:
+  appto_net:
+    external: true
+    #name: appto_net
